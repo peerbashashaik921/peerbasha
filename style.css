@@ -10,18 +10,56 @@ body {
   color: #ffffff;
 }
 
+/* NAVIGATION BAR */
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #0f0f1aee;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  z-index: 1000;
+  border-bottom: 1px solid #00d4ff33;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #00d4ff;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #00d4ff;
+}
+
 /* HERO */
 .hero {
   text-align: center;
-  padding: 80px 20px 60px;
+  padding: 120px 20px 60px;
   background: linear-gradient(135deg, #1a1a2e, #16213e);
 }
 
 .profile-pic {
-  width: 160px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
+  object-position: top;
   border: 4px solid #00d4ff;
   margin-bottom: 20px;
 }
@@ -55,7 +93,7 @@ body {
 /* SECTIONS */
 .section {
   text-align: center;
-  padding: 60px 20px;
+  padding: 80px 20px;
   max-width: 700px;
   margin: 0 auto;
 }
