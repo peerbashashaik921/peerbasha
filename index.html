@@ -1,42 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio Calculator</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Peerbasha | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
 
-    <div class="calculator">
-        <div id="display">0</div>
-        
-        <div class="buttons">
-            <button class="btn operator" onclick="clearDisplay()">AC</button>
-            <button class="btn operator" onclick="deleteLast()">DEL</button>
-            <button class="btn operator" onclick="appendToDisplay('/')">/</button>
-            <button class="btn operator" onclick="appendToDisplay('*')">*</button>
-            
-            <button class="btn" onclick="appendToDisplay('7')">7</button>
-            <button class="btn" onclick="appendToDisplay('8')">8</button>
-            <button class="btn" onclick="appendToDisplay('9')">9</button>
-            <button class="btn operator" onclick="appendToDisplay('-')">-</button>
-            
-            <button class="btn" onclick="appendToDisplay('4')">4</button>
-            <button class="btn" onclick="appendToDisplay('5')">5</button>
-            <button class="btn" onclick="appendToDisplay('6')">6</button>
-            <button class="btn operator" onclick="appendToDisplay('+')">+</button>
-            
-            <button class="btn" onclick="appendToDisplay('1')">1</button>
-            <button class="btn" onclick="appendToDisplay('2')">2</button>
-            <button class="btn" onclick="appendToDisplay('3')">3</button>
-            <button class="btn equal" onclick="calculate()">=</button>
-            
-            <button class="btn zero" onclick="appendToDisplay('0')">0</button>
-            <button class="btn" onclick="appendToDisplay('.')">.</button>
-        </div>
+    <!-- NAVIGATION BAR -->
+    <nav>
+      <div class="logo">Peerbasha</div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <div class="hero fade-in" id="home">
+      <img src="photo.jpg.jpeg" alt="Peerbasha" class="profile-pic glow" />
+      <h1>Hi, I'm <span class="typing">Peerbasha</span> 👋</h1>
+      <p class="tagline">B.Tech Student | Aspiring Web Developer</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+
+    <!-- ABOUT SECTION -->
+    <div class="section fade-in" id="about">
+      <h2>About Me</h2>
+      <p>I am a B.Tech student passionate about technology and
+      building cool things on the web.</p>
+    </div>
+
+    <!-- SKILLS SECTION -->
+    <div class="section fade-in" id="skills">
+      <h2>My Skills</h2>
+      <div class="skills">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Problem Solving</span>
+      </div>
+    </div>
+
+    <!-- PROJECTS SECTION -->
+    <div class="section fade-in" id="projects">
+      <h2>My Projects</h2>
+      <div class="card">
+        <h3>🚀 Portfolio Website</h3>
+        <p>Built using HTML & CSS — this site!</p>
+      </div>
+    </div>
+
+    <!-- CONTACT SECTION -->
+    <div class="section fade-in" id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: peerbashashaik921@email.com</p>
     </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
